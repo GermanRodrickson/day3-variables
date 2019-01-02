@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>prueba</title>
+    <title>Variables</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/main.scss">
   </head>
@@ -11,15 +11,14 @@
 
 
     <section class="wrapper">
-      <input type="range" id="blur"> <span>Blur</span>
-      <input type="range"> <span>Spacing</span> 
-      <input type="color" value="#FF0000" class="color">
+      <input type="range" id="blur" oninput="setBlur()"> <span>Blur</span>
+      <input type="range" id="spacing" oninput="setSpacing()"> <span>Spacing</span> 
+      <input type="color" value="#FF0000" id="color" oninput="setColor()">
 
     </section>
-    <img src="https://picsum.photos/200" alt="lorem-picsum" id="image">
-
     
-
-    <script src="index.js"></script>
+    <img src="https://picsum.photos/200" alt="lorem-picsum" id="image">
+    
+    <script src="./index.js"></script>
   </body>
 </html>
